@@ -23,6 +23,6 @@ func _physics_process(_delta: float) -> void:
 ```
 
 I've left an example scene on the project, using a simple node2d with a sprite to show it working.
-
 And here it's in action:
+
 ![A gif showing how the joystick works, on the left bottom side is the joystick itself and on the right a yellow kinda static character moving according to the direction the joystick is being dragged.](./Demo/demo_touch_joystick.gif)
