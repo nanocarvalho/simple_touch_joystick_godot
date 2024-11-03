@@ -5,6 +5,7 @@ If you want to anchor this onto your UI, make it a child of a control node, and 
 
 The usage is simple:
 - add the joystick_touch scene, script and assets to the project, make sure they are linked correcty. You can change the assets as you like, just remember to set the touch collsion shape properly for the new size.
+- If you don't use "ui_touch" for the mouse, change it on the joystick node.
 - Import the joystick on the Player script/where you wanna to control via joystick.
 - Retrieve the vector2 using the get_direction() function, like this:
 
