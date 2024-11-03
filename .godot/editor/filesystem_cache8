@@ -1,0 +1,10 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1730661735
+joystick_touch.gd::GDScript::-1::1730661104::0::1::::<>TouchScreenButton<>::
+joystick_touch.tscn::PackedScene::8131008805109789170::1730661534::0::1::::<><>::res://joystick_touch.gd<>uid://c8yu5np4xy7sj::::res://Assets/base.png<>uid://wcj4by37ypsc::::res://Assets/point.png
+joy_icon.png::CompressedTexture2D::2034729355158974933::1730660776::1730660795::1::::<><>::
+::res://Assets/::1730660856
+base.png::CompressedTexture2D::7139886894536143613::1730565144::1730565157::1::::<><>::
+point.png::CompressedTexture2D::1548881647417544162::1730564985::1730565006::1::::<><>::
+::res://test_assets/::1730661737
+test_char.png::CompressedTexture2D::7799334158019552625::1730661716::1730661740::1::::<><>::

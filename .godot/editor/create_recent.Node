@@ -1,0 +1,6 @@
+Sprite2D
+Node2D
+CollisionShape2D
+Area2D
+TouchScreenButton
+CharacterBody2D

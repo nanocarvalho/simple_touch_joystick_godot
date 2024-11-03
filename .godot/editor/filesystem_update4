@@ -1,0 +1,4 @@
+res://joystick_touch.tscn
+res://test_assets/test_scene.tscn
+res://test_assets/test_char.gd
+res://joystick_touch.gd
