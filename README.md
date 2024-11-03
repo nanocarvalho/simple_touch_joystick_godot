@@ -21,6 +21,7 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 
 ```
+
 I've left an example scene on the project, using a simple node2d with a sprite to show it working.
 
 And here it's in action:
