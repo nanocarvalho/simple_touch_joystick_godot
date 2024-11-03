@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dn3yr6j02obsk"]
+
+[ext_resource type="Script" path="res://joystick_touch.gd" id="1_rh2sm"]
+[ext_resource type="Texture2D" uid="uid://c8yu5np4xy7sj" path="res://Assets/base.png" id="2_rpgjj"]
+[ext_resource type="Texture2D" uid="uid://wcj4by37ypsc" path="res://Assets/point.png" id="3_3c8qr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vs7e1"]
+radius = 32.0
+
+[node name="Joystick_touch" type="TouchScreenButton"]
+shape = SubResource("CircleShape2D_vs7e1")
+action = "ui_touch"
+script = ExtResource("1_rh2sm")
+
+[node name="base" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_rpgjj")
+
+[node name="point" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("3_3c8qr")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="released" from="." to="." method="_on_released"]
