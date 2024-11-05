@@ -2,37 +2,40 @@ extends TouchScreenButton
 @onready var base: Sprite2D = $base
 @onready var point: Sprite2D = $point
 
-var touch_inside_area: bool = false
-var touched: bool = false
+#Joy config
+var joy_index: int = -1
+var helded: bool 
 var direction_vector: Vector2
 var joy_radius: float
 
 func _ready() -> void:
 	joy_radius = shape.radius
+	pressed.connect(_touch_pressed)
+	released.connect(_touch_released)
 
-func _process(_delta: float) -> void:
-	if touch_inside_area and Input.is_action_pressed("ui_touch"):
-		touched = true
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventScreenTouch:
+		if helded and joy_index == -1:
+			joy_index = event.index
+			get_viewport().set_input_as_handled()
+		elif event.index == joy_index:
+			_reset_position()
+			get_viewport().set_input_as_handled()
+		
+	elif event is InputEventScreenDrag:
+		if event.index == joy_index:
+			point.global_position = event.position
+			point.position = (point.transform.origin - base.transform.origin).limit_length(joy_radius)
+			direction_vector = (point.transform.origin - base.transform.origin).normalized()
+			get_viewport().set_input_as_handled()
 
-	elif Input.is_action_just_released("ui_touch"):
-		_reset_position()
-			
-	if touched:
-		point.global_position = get_global_mouse_position()
-		direction_vector = (point.transform.origin - base.transform.origin).normalized()
-
-	point.position = (point.transform.origin - base.transform.origin).limit_length(joy_radius)
-
-func get_direction() -> Vector2:
-	return direction_vector
-	
 func _reset_position() -> void:
-	touched = false
+	joy_index = -1
 	point.global_position = base.global_transform.origin
 	direction_vector = Vector2.ZERO
 
-func _on_pressed() -> void:
-	touch_inside_area = true
+func _touch_pressed() -> void:
+	helded = true
 
-func _on_released() -> void:
-	touch_inside_area = false
+func _touch_released() -> void:
+	helded = false
