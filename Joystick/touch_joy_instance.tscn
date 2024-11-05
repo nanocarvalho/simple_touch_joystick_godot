@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://24b7t0ivjsh8"]
+
+[ext_resource type="Script" path="res://Joystick/touch_joy_instance.gd" id="1_vv6a8"]
+[ext_resource type="Texture2D" uid="uid://b180fs5bkpo4y" path="res://Joystick/Assets/placement.png" id="2_rrdh3"]
+
+[node name="TouchJoystickInstance" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vv6a8")
+
+[node name="placement" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_rrdh3")

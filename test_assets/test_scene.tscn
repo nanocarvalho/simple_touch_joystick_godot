@@ -1,32 +1,26 @@
 [gd_scene load_steps=6 format=3 uid="uid://bvo3njegps5gd"]
 
 [ext_resource type="Script" path="res://test_assets/test_char.gd" id="1_gncn4"]
-[ext_resource type="PackedScene" uid="uid://24b7t0ivjsh8" path="res://touch_joy_instance.tscn" id="1_hub0v"]
-[ext_resource type="Texture2D" uid="uid://hwagxyylcjud" path="res://test_assets/test_char.png" id="1_mnsl5"]
+[ext_resource type="PackedScene" uid="uid://24b7t0ivjsh8" path="res://Joystick/touch_joy_instance.tscn" id="1_hub0v"]
+[ext_resource type="Texture2D" uid="uid://cfe4fin7t6x5c" path="res://test_assets/test_char.png" id="1_mnsl5"]
 [ext_resource type="Script" path="res://test_assets/test_char_2.gd" id="4_43jxf"]
-[ext_resource type="Texture2D" uid="uid://cnuhau4xtll8n" path="res://test_assets/char_2.png" id="5_sd133"]
+[ext_resource type="Texture2D" uid="uid://crvn37kw53s1g" path="res://test_assets/char_2.png" id="5_sd133"]
 
 [node name="test_scene" type="Node2D"]
 
 [node name="Control" type="CanvasLayer" parent="."]
 
 [node name="joy_right" parent="Control" instance=ExtResource("1_hub0v")]
-anchors_preset = -1
-anchor_left = 0.85
-anchor_top = 0.75
-anchor_right = 0.85
-anchor_bottom = 0.75
-grow_horizontal = 1
-grow_vertical = 1
+offset_left = 262.0
+offset_top = 131.0
+offset_right = 262.0
+offset_bottom = 131.0
 
 [node name="joy_left" parent="Control" instance=ExtResource("1_hub0v")]
-anchors_preset = -1
-anchor_left = 0.15
-anchor_top = 0.75
-anchor_right = 0.15
-anchor_bottom = 0.75
-grow_horizontal = 1
-grow_vertical = 1
+offset_left = 47.0
+offset_top = 129.0
+offset_right = 47.0
+offset_bottom = 129.0
 
 [node name="test_char" type="Node2D" parent="."]
 position = Vector2(233, 73)
