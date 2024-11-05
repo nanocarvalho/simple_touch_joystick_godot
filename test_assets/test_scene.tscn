@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://test_assets/test_char.gd" id="1_gncn4"]
 [ext_resource type="PackedScene" uid="uid://24b7t0ivjsh8" path="res://Joystick/touch_joy_instance.tscn" id="1_hub0v"]
-[ext_resource type="Texture2D" uid="uid://cfe4fin7t6x5c" path="res://test_assets/test_char.png" id="1_mnsl5"]
+[ext_resource type="Texture2D" uid="uid://c6rjfaru0sugt" path="res://test_assets/test_char.png" id="1_mnsl5"]
 [ext_resource type="Script" path="res://test_assets/test_char_2.gd" id="4_43jxf"]
-[ext_resource type="Texture2D" uid="uid://crvn37kw53s1g" path="res://test_assets/char_2.png" id="5_sd133"]
+[ext_resource type="Texture2D" uid="uid://whswpshuv4jt" path="res://test_assets/char_2.png" id="5_sd133"]
 
 [node name="test_scene" type="Node2D"]
 

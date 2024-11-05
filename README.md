@@ -7,7 +7,7 @@ To use:
 - Whenever you wanna use the direction, import it onto your script and use the "_get_direction()" function. 
 - You can change the assets as you like, just open the "joystick touch" scene and change the sprites, just remember to set the touch collsion shape properly for the new size.
 
-- You can retriece the direction vector like this:
+- You can retrieve the direction vector like this:
 
 ```
 extends CharacterBody2D

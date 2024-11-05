@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dn3yr6j02obsk"]
 
 [ext_resource type="Script" path="res://Joystick/joystick_touch.gd" id="1_gboyi"]
-[ext_resource type="Texture2D" uid="uid://dt28qdesxpmcn" path="res://Joystick/Assets/base.png" id="2_1hw0d"]
-[ext_resource type="Texture2D" uid="uid://brhc2vqdxmhpv" path="res://Joystick/Assets/point.png" id="3_aq1n1"]
+[ext_resource type="Texture2D" uid="uid://bmj6donaa8se2" path="res://Joystick/Assets/base.png" id="2_1hw0d"]
+[ext_resource type="Texture2D" uid="uid://c1k26wgcp5p6" path="res://Joystick/Assets/point.png" id="3_aq1n1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vs7e1"]
 radius = 32.0
